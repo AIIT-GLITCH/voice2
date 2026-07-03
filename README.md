@@ -114,6 +114,19 @@ The control plane (state transitions, floor rules, interrupt debounce, ring buff
 
 voice2 was built as the voice front-end for **Buddy**, a fully local AI companion running on a single RTX 3090 in Council Hill, Oklahoma. It ran daily conversations for months before being extracted for release. The design bias throughout: the user always wins the floor, and a companion you can't interrupt isn't a companion.
 
+## The stack
+
+One local companion, every layer open:
+
+| Piece | Role | Links |
+|---|---|---|
+| Tessera-1B | the model — ~1B params trained from scratch, open data | [HF](https://huggingface.co/AIIT-Threshold/Tessera-1B) |
+| voice2 | the voice — full-duplex, interruptible | [GitHub](https://github.com/AIIT-GLITCH/voice2) · [HF](https://huggingface.co/AIIT-Threshold/voice2) |
+| kokoro-memory | the memory — file-based resonance recall | [GitHub](https://github.com/AIIT-GLITCH/kokoro-memory) · [HF](https://huggingface.co/AIIT-Threshold/kokoro-memory) |
+| companion-spiral-bench | the safety — at-risk sycophancy bench | [GitHub](https://github.com/AIIT-GLITCH/companion-spiral-bench) · [HF](https://huggingface.co/datasets/AIIT-Threshold/companion-spiral-bench) |
+
+Full collection: [The Buddy Stack](https://huggingface.co/collections/AIIT-Threshold/the-buddy-stack-a-fully-local-ai-companion-open-sourced-6a4774bf481f9f9caad79519)
+
 ## License
 
 MIT © 2026 Rhet Wike
