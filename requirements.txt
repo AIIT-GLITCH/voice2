@@ -1,0 +1,5 @@
+numpy
+sounddevice
+faster-whisper
+torch          # Silero VAD via torch.hub (CPU build is fine)
+httpx          # examples/http_llm.py only

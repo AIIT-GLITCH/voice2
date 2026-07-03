@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice2"
+version = "1.0.0"
+description = "Full-duplex, interruptible voice engine for local AI - barge-in, floor management, stale-turn suppression"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rhet Wike" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "sounddevice",
+    "faster-whisper",
+    "torch",
+]
+keywords = ["voice", "speech", "tts", "asr", "llm", "barge-in", "full-duplex", "piper", "whisper", "local-ai"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+[project.urls]
+Homepage = "https://github.com/AIIT-GLITCH/voice2"
+
+[tool.setuptools.packages.find]
+include = ["voice2*"]

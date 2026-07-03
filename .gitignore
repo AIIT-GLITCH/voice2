@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+voice_engine.jsonl
+*.onnx
+*.onnx.json
