@@ -8,3 +8,4 @@ venv/
 voice_engine.jsonl
 *.onnx
 *.onnx.json
+.pytest_cache/
